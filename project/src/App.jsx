@@ -5,7 +5,7 @@ import Footer from "./section/Footer";
 import CodingChallenge from "./events/CodingChallenge";
 import WebDevChallenge from "./events/WebDevChallenge";
 import HuntArena from "./events/HuntArena";
-
+import Ideathon from "./events/Ideathon"
 const App = () => {
   return (
     <Router>
@@ -21,9 +21,10 @@ const App = () => {
               </>
             }
           />
-          <Route path="/coding-challenge" element={<CodingChallenge />} />
-          <Route path="/web-development-challenge" element={<WebDevChallenge />} />
-          <Route path="/hunt-arena" element={<HuntArena />} />
+          <Route path="/coc" element={<CodingChallenge />} />
+          <Route path="/au" element={<WebDevChallenge />} />
+          <Route path="/sl" element={<HuntArena />} />
+          <Route path="sf" element={<Ideathon/>} />
         </Routes>
       </div>
     </Router>

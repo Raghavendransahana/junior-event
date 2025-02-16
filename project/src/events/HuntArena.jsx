@@ -7,7 +7,7 @@ export default function HuntArena() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-12">
-      <h1 className="text-4xl font-extrabold text-yellow-400 mb-6 text-center">Hunt Arena</h1>
+      <h1 className="text-4xl font-extrabold text-yellow-400 mb-6 text-center">SOLO LEVELING</h1>
 
       <div className="max-w-3xl text-gray-300 space-y-6 text-lg">
         <h2 className="text-2xl font-bold text-yellow-400">Round 1 </h2>

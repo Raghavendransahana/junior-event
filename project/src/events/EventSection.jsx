@@ -3,31 +3,36 @@ import { useNavigate } from "react-router-dom";
 import amongs from "../assets/among_us.jpeg"
 import clash from "../assets/clash.jpg"
 import solo from "../assets/solo.jpeg"
+import shawdow from "../assets/shawdow.jpeg"
 const events = [
   {
    
     image: clash,
-    link: "/coding-challenge",
+    link: "/coc",
   },
   {
     image: amongs,
-    link: "/web-development-challenge",
+    link: "/au",
   },
   {
    
     image: solo,
-    link: "/hunt-arena",
+    link: "/sl",
   },
+  {
+   image: shawdow,
+   link:"/sf",
+  }
 ];
 
 export default function EventsSection() {
   const navigate = useNavigate();
 
   return (
-    <div className="py-20 bg-black text-white text-center">
+    <div className="px-20 bg-black text-white text-center">
       <h2 className="text-4xl font-extrabold mb-4">Upcoming Events</h2>
-      <p className=" mb-3"> To learn more,Click on the cards below</p>
-      <div className="flex flex-wrap justify-center gap-10">
+      <p className=" mb-13"> To learn more,Click on the cards below</p>
+      <div className="flex flex-wrap justify-center gap-x-40 gap-y-20">
         {events.map((event, index) => (
           <motion.div
             key={index}
